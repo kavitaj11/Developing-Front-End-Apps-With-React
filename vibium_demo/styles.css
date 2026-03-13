@@ -1,0 +1,89 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.4;
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.controls ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.app-btn {
+  width: 100%;
+  padding: 0.65rem;
+  text-align: left;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.app-btn:hover {
+  background: #f9fafb;
+}
+
+.app-btn.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.status {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.status.up {
+  color: #047857;
+}
+
+.status.down {
+  color: #b91c1c;
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+#preview-frame {
+  width: 100%;
+  min-height: 540px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.muted {
+  color: #6b7280;
+}

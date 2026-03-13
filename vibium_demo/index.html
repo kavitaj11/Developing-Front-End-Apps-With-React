@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibium Front-End Demo Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header>
+        <h1>Vibium Demo Lab</h1>
+        <p>
+          Use this dashboard to smoke-test the React projects in this repository.
+          Start any app with <code>npm run dev</code>, then verify it here.
+        </p>
+      </header>
+
+      <section class="controls card">
+        <h2>Projects</h2>
+        <p class="muted">Click a project to load it in the preview frame.</p>
+        <ul id="app-list"></ul>
+      </section>
+
+      <section class="preview card">
+        <div class="preview-header">
+          <h2 id="selected-app">Select an app</h2>
+          <a id="open-direct" href="#" target="_blank" rel="noopener">Open directly</a>
+        </div>
+        <iframe id="preview-frame" title="Application preview"></iframe>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
